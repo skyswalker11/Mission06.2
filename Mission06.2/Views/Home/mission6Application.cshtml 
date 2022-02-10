@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Task"] = "Task Application";
+}
+
+@model mission6.Models.ApplicationResponse
+
+
+
+<div>
+    <form method="post">
+        @*<label asp-for="Category">Category:</label>
+
+        <select asp-for="Category">
+            <option value="          ">           </option>
+            <option value="Importan & Urgent">Action/Adventure</option>
+            <option value="Important & Non-Urgent">Comedy</option>
+            <option value="Unimportant & Urgent">Drama</option>
+            <option value="Unimportant & Non-Urgent">Family</option>
+       
+        </select>
+        <br />
+        <br />*@
+
+        <label asp-for="Task">Task:</label>
+        <input asp-for="Task" /><br /><br />
+
+
+        <button type="submit">Submit Information</button>
+        <div asp-validation-summary="All">
+
+        </div>
+    </form>
+</div>
